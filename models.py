@@ -1,4 +1,4 @@
-from sqlalchemy import create_engine, Column, Integer, String, DateTime, MetaData, Table
+from sqlalchemy import create_engine, Column, Integer, String, DateTime, MetaData, Table, BigInteger
 from sqlalchemy.orm import sessionmaker, declarative_base
 from datetime import datetime
 
@@ -26,7 +26,7 @@ def create_channel_table(session, channel_id):
         {
             '__tablename__': table_name,
             '__table_args__': {'extend_existing': True},
-            'message_id': Column(Integer, primary_key=True),
+            'message_id': Column(BigInteger, primary_key=True),
             'username': Column(String),
             'message': Column(String),
             'published': Column(DateTime),
@@ -41,4 +41,4 @@ def create_channel_table(session, channel_id):
 
 class AllowedChannels(Base):
     __tablename__ = 'allowed_channels'
-    channel_id = Column(Integer, primary_key=True)
+    channel_id = Column(BigInteger, primary_key=True)

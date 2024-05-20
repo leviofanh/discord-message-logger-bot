@@ -14,7 +14,7 @@ Its features:
 - Discord.py library installed.
 - SQLAlchemy library installed.
 - Aiohttp library insalled
-- Configobj libraary installed
+- Configobj library installed
   
 ### Quick Setup
 1. Clone this repository.

@@ -9,6 +9,13 @@ Its features:
 - Background saving of sent messages. 
 - Addition of history in case of bot disconnection.
 
+#### Prerequisites
+- Python 3.8+ installed on your system.
+- Discord.py library installed.
+- SQLAlchemy library installed.
+- Aiohttp library insalled
+- Configobj libraary installed
+  
 ### Quick Setup
 1. Clone this repository.
 2. Create a new app on the Discord developer portal.
